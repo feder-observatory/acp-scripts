@@ -29,6 +29,11 @@ This repository contains scripts used as part of running Feder Observatory. The 
     + **Purpose**: This "tiddler" adds links to the ACP web page for opening and closing the cover and for slewing to zenith. A "tiddler" is the ACP author's name for these little HTML code snippets that get embedded into the ACP web site.
     + **Where to put it on the control computer**: Really the only way to get this into the right place is to run ACP (double-click on the desktop icon) and click the "Use Web Browser" button. When the web page opens, open up the "Toolbox" area in the left column, then click on "Authoring System". Make a new tiddler; this one was called "Common Tasks." Paste the content of `CommonTasks.tiddler` in and save it. Then click "save to web" in the upper right column for it to actually be available.
         + To add it to the default landing page for everyone, edit the "StartupItems" tiddler (may have to search for it on the right?) and add `[[CommonTasks]]`. Again, save it and "save to web" for the changes to take effect.
++ `digitalloggers.asp`, `digitalloggers.tiddler`
+    + **Purpose**: These two files contain the scripts for using the Digital Loggers internet power control and the tiddler for adding it to the ACP page. *The actual files are not in this repo because their licensing terms are not clear.* They should be installed when you install the ASCOM driver for the Digital Loggers switch. *There is also a copy of them in `Documents/PowerSwitchACP`*.
+    + **Where to put it on the control computer**: Don't recall where the `.asp` file should go, though that may be taken care of by the ASCOM driver. The `.tiddler` content can be copy/pasted into a tiddler in the ACP authoring environment (see previous item). You can also add this tiddler to the main page the same way you do for the previous item.
+    + **Link to the driver install page**: The ASCOM driver can be downloaded at [https://ascom-standards.org/Downloads/SwitchDrivers.htm](https://ascom-standards.org/Downloads/SwitchDrivers.htm).
+
 
 ### Other
 
