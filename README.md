@@ -25,6 +25,10 @@ This repository contains scripts used as part of running Feder Observatory. The 
             + `TargetStart`: For dawn/dusk flats or lights we open the flaps (which does nothing if they are already open) and we also open the dome.
             + `TargetEnd`: Not sure what was intended here, but out current modifications are clearly a debugging effort.
     + **Where to put it on the control computer**: It belongs in the folder `C:\Program Files (x86)\ACP Obs Control` (though check the ACP documentation if things are not working).
++ `CommonTasks.tiddler`
+    + **Purpose**: This "tiddler" adds links to the ACP web page for opening and closing the cover and for slewing to zenith. A "tiddler" is the ACP author's name for these little HTML code snippets that get embedded into the ACP web site.
+    + **Where to put it on the control computer**: Really the only way to get this into the right place is to run ACP (double-click on the desktop icon) and click the "Use Web Browser" button. When the web page opens, open up the "Toolbox" area in the left column, then click on "Authoring System". Make a new tiddler; this one was called "Common Tasks." Paste the content of `CommonTasks.tiddler` in and save it. Then click "save to web" in the upper right column for it to actually be available.
+        + To add it to the default landing page for everyone, edit the "StartupItems" tiddler (may have to search for it on the right?) and add `[[CommonTasks]]`. Again, save it and "save to web" for the changes to take effect.
 
 ### Other
 
