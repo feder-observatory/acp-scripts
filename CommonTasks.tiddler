@@ -1,0 +1,21 @@
+<html>
+• <a id="utilApCovOp" href="javascript:;" op="OpenCover.js">Open Telescope Cover</a><br>
+• <a id="utilApCovCl" href="javascript:;" op="CloseCover.js">Close Telescope Cover</a><br>
+• <a id="utilSlewToZenith" href="javascript:;" op="SlewToZenith.js">Slew Telescope to Zenith</a><br>
+</html>
+
+
+<script>
+function _utilOnComplete(text, params) {
+    displayMessage(text);
+}
+function _util(e) {
+    if(!e) e = window.event;
+    var op = resolveTarget(e).getAttribute("op");
+    var qs = op ? "?" + op : "";
+    DC3.Ajax.sendRequest("GET", "/ac/arunscript.asp" + qs, "", _utilOnComplete, null);
+}
+document.getElementById("utilApCovOp").onclick=_util;
+document.getElementById("utilApCovCl").onclick=_util;
+document.getElementById("utilSlewToZenith").onclick=_util;
+</script>
